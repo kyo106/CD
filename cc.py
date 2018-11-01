@@ -2,7 +2,7 @@
 #Coded by Leeon123
 
 import socket
-import socks
+import struct
 import time
 import random
 import threading
