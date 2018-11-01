@@ -5,7 +5,7 @@ import random
 import threading
 import sys
 
-print '''
+print ('''
   ____ ____        _   _   _             _
  / ___/ ___|      / \ | |_| |_ __ _  ___| | __
 | |  | |   _____ / _ \| __| __/ _` |/ __| |/ /
@@ -17,7 +17,7 @@ print '''
              If you want to stop
             this script, pls just
               close the window.   
->---------------------------------------------<'''
+>---------------------------------------------<''')
 
 useragents=["Mozilla/5.0 (Android; Linux armv7l; rv:10.0.1) Gecko/20100101 Firefox/10.0.1 Fennec/10.0.1",
 			"Mozilla/5.0 (Android; Linux armv7l; rv:2.0.1) Gecko/20100101 Firefox/4.0.1 Fennec/2.0.1",
