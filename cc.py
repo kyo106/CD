@@ -141,8 +141,8 @@ useragents=["Mozilla/5.0 (Android; Linux armv7l; rv:10.0.1) Gecko/20100101 Firef
 			"Mozilla/5.0 (X11; U; SunOS i86pc; en-US; rv:1.9.1b3) Gecko/20090429 Firefox/3.1b3",
 			"Mozilla/5.0 (X11; U; SunOS sun4m; en-US; rv:1.4b) Gecko/20030517 Mozilla Firebird/0.6",]
 
-ip = str (input("> Host/Ip:"))
-url = str (input("> Page you want to attack:"))
+ip = raw_input("> Host/Ip:")
+url = raw_input("> Page you want to attack:")
 port = int(input("> Port:"))
 thread_num = int(input("> Threads:"))
 out_file = str(input("> Proxy file path(proxy.txt):"))
